@@ -58,11 +58,63 @@
     </header>
     <main>
         <div class="main-body">
-            <section class="dark"></section>
-            <section class="medium"></section>
-            <section class="light"></section>
-            <section class="medium"></section>
-            <section class="dark"></section>
+            <section class="dark">
+                <h2 style="text-align: center; font-family: 'Faster One', system-ui; font-size:2.5rem; font-weight: 100;">Upcoming Movies</h2>
+                <div class="movie-container">
+                    <div class="carousel">
+                        <img src="images/movie2.jpg" class="active" alt="movie theater poster of Mortal Kombat">
+                        <img src="images/movie3.jpg" alt="movie theater poster of the Sheep Detectives">
+                        <img src="images/movie4.jpg" alt="movie theater poster of Hit me Hard and Soft">
+                    </div>
+                </div>
+            </section>
+            <section class="medium">
+                <h2>Movies - Screen 1</h2>
+                <div class="movie-poster">
+                    <img src="images/theater1.jpg" alt="Super Mario Galaxy movie poster">
+                    <h3>The Super Mario Galxy Movie</h3>
+                    <br>
+                    <p>Showtime: 6:30 PM (Mon-Thurs) / 6:00 PM (Fri-Sun)</p>
+                    <br>
+                    <img src="images/theater2.jpeg" alt="Project Hail Mary movie poster">
+                    <h3>Project Hail Mary</h3>
+                    <br>
+                    <p>Showtime: 9:00 PM (Mon-Thurs) / 8:45 PM (Fri-Sun)</p>
+                </div>
+            </section>
+            <section class="light">
+                <h2>Movies - Screen 2</h2>
+                <div class="movie-poster">
+                    <img src="images/theater3.jpg" alt="Michael movie poster">
+                    <h3>Michael</h3>
+                    <br>
+                    <p>Showtime: 6:45 PM (Mon-Thurs) / 6:15 PM (Fri-Sun)</p>
+                    <br>
+                    <img src="images/movie2.jpg" alt="Mortal Kombat movie poster">
+                    <h3>Mortal Kimbat</h3>
+                    <br>
+                    <p>Showtime: 9:15 PM (Mon-Thurs) / 9:00 PM (Fri-Sun)</p>
+                </div>
+                <div class="split" id="button">
+                    <a href="tickets.html#tickets" class="left-side"><div class="button">Tickets</div></a>
+                    <a href="tickets.html#parking" class="right-side"><div class="button">Parking</div></a>
+                </div>
+            </section>
+            <section class="dark">
+                <h2>Hours of Operations</h2>
+                <br>
+                <p>The RETRO Drive-In Theater is open seasonally, with hours designed to give guests the best possible evening experience.</p>
+                <br>
+                <br>
+                <p>Monday - Thursday: 6:00 PM - 12:30AM</p>
+                <p>Friday - Sunday: 5:30 PM - 2 AM</p>
+                <br>
+                <br>
+                <p>Gates open one hour before the first showing to allow guests time to park, grab food, and get settled. Movie showtimes begin at dusk.</p>
+                <br>
+                <br>
+                <p>Hours may vary for special events, holidays, or private rentals. For the most up-to-date schedule and showtimes, please check our website or contact us directly.</p>
+            </section>
         </div>
     </main>
     <footer>
@@ -95,5 +147,15 @@
                 <p>Instagram | Facebook | TikTok</p>
             </div>
         </footer>
+        <script>
+            const images = document.querySelectorAll('.carousel img');
+            let index = 0;
+
+            setInterval(() => {
+                images[index].classList.remove('active');
+                index = (index + 1) % images.length;
+                images[index].classList.add('active');
+            }, 3000);
+        </script>
     </body>
 </html>

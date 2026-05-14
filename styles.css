@@ -10,6 +10,10 @@ body {
     font-family: "ABeeZee", sans-serif;
 }
 
+p {
+    margin-bottom: 1.5rem;
+}
+
 /*****************************************************Header*******************************************************************/
 .header-container {
     background-image: url("./images/background.png");
@@ -157,10 +161,9 @@ section img {
 }
 
 section h2 {
-    
     font-weight: 100;
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
@@ -191,6 +194,16 @@ section h2 {
      margin: 1.5rem;
 }
 
+.button-flex{
+    margin: 0px auto;
+    width: 90%;
+    display:flex;
+}
+
+#left-button{
+    flex:1;
+}
+
 .button {
     border-radius: 25px;
     margin: 1rem auto;
@@ -203,14 +216,106 @@ section h2 {
     background-color: #1472ed;
 }
 
-.button a{
-    text-decoration: none;
+a {text-decoration: none;}
+
+a .button {
     color:#9FBECE;
 }
 
-.button a:hover{
+a .button:hover{
     cursor: pointer;
 }
+
+.movie-container {
+    margin: 0px auto;
+    width: 80%;
+    background-color: #33609D;
+    border-radius: 25px;
+    padding: 0.5rem;
+}
+
+.movie-container .carousel img {
+    width: 65%;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.movie-poster {
+    margin: 0px auto;
+    width: 80%;
+}
+
+.movie-poster img {
+    margin-bottom: 1.5rem;
+    border-radius: 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+table th {
+    font-size:1.2rem;
+}
+
+table td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.category {
+    color: #4778BB;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.contact-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 1rem;
+    font-weight: bold;
+    color:#80B0BF;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #80B0BF;
+    color:#082B5A;
+}
+
+input::placeholder, textarea::placeholder {
+    color:#082B5A;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+    background-color: #80B0BF;
+    color:#082B5A;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+
 
 /*****************************************************Carousel*******************************************************************/
 .carousel {
@@ -218,11 +323,14 @@ section h2 {
     margin-bottom: 0px;
     width: 95%;
     max-width: 400px;
-    min-height: 300px;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+#index img {
+    min-height: 300px;
 }
 
 .carousel img {
@@ -313,6 +421,21 @@ footer {
 
     img {
         max-width: 600px;
+    }
+
+    #button {
+        margin-top: 1rem;
+        gap: 0px;
+    }
+
+    .movie-poster {
+        margin: 0px auto;
+        width: 40%;
+    }
+
+    .contact-form{
+        margin: 0px auto;
+        width: 65%;
     }
 
 

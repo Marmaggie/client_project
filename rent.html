@@ -58,11 +58,34 @@
     </header>
     <main>
         <div class="main-body">
-            <section class="dark"></section>
-            <section class="medium"></section>
-            <section class="light"></section>
-            <section class="medium"></section>
-            <section class="dark"></section>
+            <section class="dark">
+                <h2 style="text-align: center; font-family: 'Faster One', system-ui; font-size:2.5rem; font-weight: 100;">Want To Rent a Screen?</h2>
+                <p>Make your event unforgettable at The RETRO Drive-In Theater by renting one of our large outdoor screens. Whether you're planning a birthday party, school function, corporate event, family reunion, or private movie night, our drive-in experience offers a unique way to celebrate under the stars. Guests can enjoy full access to our projection system, audio setup, and optional concession services to enhance the event. Our team will work with you to help create a smooth and memorable experience from start to finish.</p>
+            </section>
+            <section class="medium">
+                <h2>Pricing and Polcies</h2>
+                <p>Screen rental pricing varies depending on the size of the event, day of the week, film licensing requirements, and additional services requested such as concessions or restaurant access. All rentals require advance booking and approval to ensure availability and proper scheduling. A deposit may be required to secure your date, with final pricing confirmed after event details are reviewed. Guests are expected to follow all theater guidelines during private events to ensure safety, respect for property, and an enjoyable experience for everyone attending.</p>
+            </section>
+            <section class="dark">
+                <h2>Rent a Screen</h2>
+                <form class="contact-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <label for="event">Event Type</label>
+                    <input type="text" id="event" name="event" placeholder="Birthday, reunion, corporate event, etc." required>
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="guests">Estimated Number of Guests</label>
+                    <input type="number" id="guests" name="guests" placeholder="Approx. attendance" min="1">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" name="message" rows="7" placeholder="Tell us more about your event..." required></textarea>
+                    <button type="submit" class="button">Request Booking</button>
+                </form>
+            </section>
         </div>
     </main>
     <footer>
