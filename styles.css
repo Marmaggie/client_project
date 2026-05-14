@@ -191,7 +191,7 @@ section h2 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-     margin: 1.5rem;
+    margin: 1.5rem;
 }
 
 .button-flex{
@@ -216,7 +216,9 @@ section h2 {
     background-color: #1472ed;
 }
 
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+}
 
 a .button {
     color:#9FBECE;
@@ -326,28 +328,28 @@ input::placeholder, textarea::placeholder {
 
 /*******************************************Accordian*******************************************************************************/
 .accordion {
-  background-color: #7EA4C6;
-  color: #082B5A;
-  cursor: pointer;
-  padding: 2rem;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-  font-size: 1rem;
-  font-family: "ABeeZee", sans-serif;;
+    background-color: #7EA4C6;
+    color: #082B5A;
+    cursor: pointer;
+    padding: 2rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1rem;
+    font-family: "ABeeZee", sans-serif;;
 }
 
 .active, .accordion:hover {
-  background-color:#1472ed;
+    background-color:#1472ed;
 }
 
 .panel {
-  padding: 1rem;
-  display: none;
-  background-color: #33609D;
-  overflow: hidden;
+    padding: 1rem;
+    display: none;
+    background-color: #33609D;
+    overflow: hidden;
 }
 
 
