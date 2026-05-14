@@ -58,11 +58,95 @@
     </header>
     <main>
         <div class="main-body">
-            <section class="dark"></section>
-            <section class="medium"></section>
-            <section class="light"></section>
-            <section class="medium"></section>
-            <section class="dark"></section>
+            <section class="dark">
+                <h2 style="text-align: center; font-family: 'Faster One', system-ui; font-size:2.5rem; font-weight: 100;">Events</h2>
+                <p>At The RETRO Drive-In Theater, there is always something exciting happening beyond the movies themselves. Guests can enjoy a variety of themed events throughout the season, including Classic Film Nights featuring timeless favorites from past decades, Family Nights with kid-friendly movies and activities, and Horror Nights packed with spooky films and late-night thrills. Special holiday events are also held during occasions like Halloween, Christmas, and summer weekends, often including themed decorations, music, contests, and exclusive food specials from the concession stand and restaurant. The RETRO also hosts community events such as car meetups, trivia nights, double-feature weekends, and outdoor live entertainment before select showings. Looking for a unique venue for your own celebration? Guests can rent one of the theater’s giant screens for birthdays, graduation parties, reunions, company events, and private movie nights, creating a memorable experience under the stars. With new events and themed nights added regularly, The RETRO offers more than just movies — it delivers a fun and nostalgic entertainment experience for all ages.</p>
+            </section>
+            <section class="medium">
+                <div class="center">
+                    <h2>Dates</h2>
+                    <table>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td>Classic Film Night</td>
+                            <td>Last Saturday of every month</td>
+                        </tr>
+                        <tr>
+                            <td>Family Movie Night</td>
+                            <td>First Friday of every month</td>
+                        </tr>
+                        <tr>
+                            <td>Horror Night</td>
+                            <td>Third Friday of every month</td>
+                        </tr>
+                        <tr>
+                            <td>Summer Movie Marathon</td>
+                            <td>Memorial Day Weekend</td>
+                        </tr>
+                        <tr>
+                            <td>Fireworks & Movie Night</td>
+                            <td>July 4th</td>
+                        </tr>
+                        <tr>
+                            <td>Halloween Horror Fest</td>
+                            <td>October 30th & 31st</td>
+                        </tr>
+                        <tr>
+                            <td>Christmas Classics Night</td>
+                            <td>December 20th–23rd</td>
+                        </tr>
+                        <tr>
+                            <td>New Year’s Eve Marathon</td>
+                            <td>December 31st</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="dark">
+                <h2>Event Info</h2>
+                <button class="accordion">Classic Film Night</button>
+                <div class="panel">
+                <p>Enjoy timeless movie classics on the last Saturday of every month. From black-and-white favorites to iconic retro films, Classic Film Night brings nostalgia to the big screen with themed snacks and vintage atmosphere.</p>
+                </div>
+
+                <button class="accordion">Family Movie Night</button>
+                <div class="panel">
+                <p>Bring the whole family for fun, family-friendly movies every first Friday of the month. Guests can enjoy animated favorites, kid-friendly concessions, and a welcoming environment for all ages.</p>
+                </div>
+
+                <button class="accordion">Horror Night</button>
+                <div class="panel">
+                <p>Get ready for thrills during Horror Night on the third Friday of every month. Featuring classic horror films, spooky decorations, and late-night showings, this event is perfect for horror fans.</p>
+                </div>
+
+                <button class="accordion">Summer Movie Marathon</button>
+                <div class="panel">
+                <p>Celebrate Memorial Day Weekend with an all-night movie marathon featuring action, comedy, and adventure films. Guests can enjoy special concession deals and double-feature screenings throughout the weekend.</p>
+                </div>
+
+                <button class="accordion">Fireworks & Movie Night</button>
+                <div class="panel">
+                <p>Join us on July 4th for a patriotic movie night followed by a fireworks show. Guests can enjoy classic summer films, themed food specials, and a festive atmosphere under the stars.</p>
+                </div>
+
+                <button class="accordion">Halloween Horror Fest</button>
+                <div class="panel">
+                <p>Experience two nights of scares on October 30th and 31st with horror movie marathons, costume contests, and themed decorations throughout the theater grounds.</p>
+                </div>
+
+                <button class="accordion">Christmas Classics Night</button>
+                <div class="panel">
+                <p>Celebrate the holiday season with classic Christmas movies from December 20th–23rd. Warm drinks, holiday treats, and festive lights make this one of our coziest events of the year.</p>
+                </div>
+
+                <button class="accordion">New Year’s Eve Marathon</button>
+                <div class="panel">
+                <p>Ring in the New Year with back-to-back movie showings on December 31st. Guests can enjoy special late-night snacks, countdown celebrations, and a memorable evening at The RETRO.</p>
+                </div>
+            </section>
         </div>
     </main>
     <footer>
@@ -95,5 +179,21 @@
                 <p>Instagram | Facebook | TikTok</p>
             </div>
         </footer>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+            </script>
     </body>
 </html>
